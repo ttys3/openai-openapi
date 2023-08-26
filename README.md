@@ -9,6 +9,9 @@ OpenAPI Generator uses [mustache templates](https://github.com/OpenAPITools/open
 #### Example command to generate the SDK
 
 ```bash
+# https://openapi-generator.tech/docs/installation/#npm
+$ npm install @openapitools/openapi-generator-cli -g
+
 $ python scripts/generate_sdk.py -s node -o ~/openai-node
 ```
 
@@ -17,3 +20,13 @@ $ python scripts/generate_sdk.py -s node -o ~/openai-node
 - The `operationId` of each operation is used as the function name for that operation
 - The `tag` determines the name of the Javascript class that contains that operation
 - `schema` names map to Typescript type names
+
+
+#### go Generator template
+
+https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/go
+
+
+#### rust generator template
+
+https://github.com/OpenAPITools/openapi-generator/tree/master/modules/openapi-generator/src/main/resources/rust
